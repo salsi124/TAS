@@ -1,32 +1,62 @@
-<!-- ===================== DEVIS.HTML ===================== -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>Devis</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demande de Devis - Nettoyage de Drones</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-  <nav>
-    <h1>DroneClean</h1>
-    <ul>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="tarifs.html">Tarifs</a></li>
-      <li><a href="disponibilites.html">Disponibilités</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <a class="btn" href="devis.html">DEVIS EN LIGNE</a>
-  </nav>
-</header>
-<h1>Demande de devis</h1>
-<form>
-<input type="text" placeholder="Nom" required>
-<input type="email" placeholder="Email" required>
-<textarea placeholder="Votre demande"></textarea>
-<button class="btn">Envoyer</button>
-</form>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="tarifs.html">Tarifs</a></li>
+                <li><a href="disponibilites.html">Disponibilité</a></li>
+                <li><a href="devis.html" class="active">Devis</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h1>Demandez votre devis personnalisé</h1>
+            <p>Remplissez le formulaire ci-dessous pour recevoir une estimation gratuite et détaillée du nettoyage de votre toiture par drone.</p>
+            
+            <form action="#" method="POST">
+                <label for="name">Nom complet</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="exemple@mail.com" required>
+
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" name="phone" placeholder="06 00 00 00 00" required>
+
+                <label for="address">Adresse de la toiture</label>
+                <input type="text" id="address" name="address" placeholder="Adresse complète" required>
+
+                <label for="type">Type de toiture</label>
+                <select id="type" name="type" required>
+                    <option value="">Sélectionnez</option>
+                    <option value="tuile">Tuile</option>
+                    <option value="ardoise">Ardoise</option>
+                    <option value="autre">Autre</option>
+                </select>
+
+                <label for="message">Informations supplémentaires</label>
+                <textarea id="message" name="message" placeholder="Ex: surface approximative, points sensibles..." rows="5"></textarea>
+
+                <button type="submit" class="btn">Envoyer la demande</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nettoyage de Drones sur Toitures. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
