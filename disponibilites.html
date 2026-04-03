@@ -1,27 +1,64 @@
-<!-- ===================== DISPONIBILITES.HTML ===================== -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>Disponibilités</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disponibilité - Nettoyage de Drones</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-  <nav>
-    <h1>DroneClean</h1>
-    <ul>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="tarifs.html">Tarifs</a></li>
-      <li><a href="disponibilites.html">Disponibilités</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <a class="btn" href="devis.html">DEVIS EN LIGNE</a>
-  </nav>
-</header>
-<h1>Disponibilités</h1>
-<p>Nous intervenons toute la semaine.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="tarifs.html">Tarifs</a></li>
+                <li><a href="disponibilites.html" class="active">Disponibilité</a></li>
+                <li><a href="devis.html">Devis</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="disponibilite-section">
+            <h1>Disponibilités</h1>
+            <p>Vérifiez nos créneaux disponibles pour planifier l’intervention de nos drones sur votre toiture. Nous nous adaptons à votre emploi du temps et aux conditions météo.</p>
+
+            <div class="calendar">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Lundi</th>
+                            <th>Mardi</th>
+                            <th>Mercredi</th>
+                            <th>Jeudi</th>
+                            <th>Vendredi</th>
+                            <th>Samedi</th>
+                            <th>Dimanche</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>9h-12h<br>14h-18h</td>
+                            <td>9h-12h<br>14h-18h</td>
+                            <td>9h-12h<br>14h-18h</td>
+                            <td>9h-12h<br>14h-18h</td>
+                            <td>9h-12h<br>14h-18h</td>
+                            <td>Fermé</td>
+                            <td>Fermé</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>Pour réserver un créneau, <a href="devis.html">demandez un devis</a> et indiquez votre date préférée.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nettoyage de Drones sur Toitures. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
