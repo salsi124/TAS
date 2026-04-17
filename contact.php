@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars($_POST["email"]);
     $message = htmlspecialchars($_POST["message"]);
 
-    $to = "test_dronemakariaprod@gmail.com"; 
+    $to = "test.dronemakariaprod@gmail.com"; 
     $subject = "Nouveau message depuis le site";
 
     $body = "Nom: $name\n";
